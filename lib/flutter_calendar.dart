@@ -193,11 +193,15 @@ class _CalendarState extends State<Calendar> {
 
   Widget get expansionButtonRow {
     if (widget.isExpandable) {
-      return new Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          new Text(Utils.fullDayFormat(selectedDate)),
-          new IconButton(
+        return new Stack(
+          children: <Widget>[
+            Container(
+                width: double.infinity,
+                child: new Text(Utils.fullDayFormat(selectedDate), style: TextStyle(fontSize: 18.0), textAlign: TextAlign.center),
+                alignment: Alignment.center),
+            Container(
+                width: double.infinity,
+                child: new IconButton(
             iconSize: 20.0,
             padding: new EdgeInsets.only(left:150.0),
             onPressed: toggleExpanded,
@@ -205,6 +209,9 @@ class _CalendarState extends State<Calendar> {
                 ? new Icon(Icons.arrow_drop_up)
                 : new Icon(Icons.arrow_drop_down),
           ),
+                alignment: Alignment.centerRight)
+          ],
+        )
         ],
       );
     } else {
