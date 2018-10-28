@@ -194,12 +194,12 @@ class _CalendarState extends State<Calendar> {
   Widget get expansionButtonRow {
     if (widget.isExpandable) {
       return new Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           new Text(Utils.fullDayFormat(selectedDate)),
           new IconButton(
             iconSize: 20.0,
-            padding: new EdgeInsets.all(0.0),
+            padding: new EdgeInsets.only(left:150.0),
             onPressed: toggleExpanded,
             icon: isExpanded
                 ? new Icon(Icons.arrow_drop_up)
