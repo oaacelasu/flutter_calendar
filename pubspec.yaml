@@ -12,7 +12,10 @@ dependencies:
     sdk: flutter
   intl: ^0.15.0
   tuple: ^1.0.1
-  date_utils: ^0.1.0
+  date_utils:
+    git:
+       url: git://github.com/oaacelasu/date_utils.git
+       ref: master
 
 dev_dependencies:
   flutter_test:
