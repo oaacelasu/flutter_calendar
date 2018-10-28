@@ -211,8 +211,6 @@ class _CalendarState extends State<Calendar> {
           ),
                 alignment: Alignment.centerRight)
           ],
-        )
-        ],
       );
     } else {
       return new Container();
