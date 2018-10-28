@@ -86,7 +86,7 @@ class _CalendarState extends State<Calendar> {
 
     if (widget.showTodayAction) {
       leftInnerIcon = new InkWell(
-        child: new Text('Today'),
+        child: new Text('Hoy'),
         onTap: resetToToday,
       );
     } else {
