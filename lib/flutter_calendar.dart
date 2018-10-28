@@ -209,7 +209,7 @@ class _CalendarState extends State<Calendar> {
                 ? new Icon(Icons.arrow_drop_up)
                 : new Icon(Icons.arrow_drop_down),
           ),
-                alignment: Alignment.centerRight)
+                alignment: Alignment.topRight)
           ],
       );
     } else {
